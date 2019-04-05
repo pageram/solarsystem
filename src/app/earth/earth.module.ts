@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { EarthComponent } from './components/earth.component';
-import { MaterialModule } from '.././core/material/material.module'
+import { MaterialModule } from '../material/material.module'
 
 @NgModule({
   declarations: [
