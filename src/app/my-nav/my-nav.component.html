@@ -1,13 +1,17 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+  <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
-    <mat-toolbar>Objects</mat-toolbar>
+      [opened]="!(isHandset$ | async)"> -->
+    <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar><a routerLink="/home">SolarSystem</a></mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/first-page">Sun</a>
-      <a mat-list-item routerLink="/second-page">Earth</a>
-      <a mat-list-item routerLink="/third-page">Mars</a>
+      <a mat-list-item routerLink="/sun">Sun</a>
+      <a mat-list-item routerLink="/earth">Earth</a>
+      <a mat-list-item routerLink="/mars">Mars</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -20,7 +24,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span> The Otherwordly </span>
+      <!-- <span> --- </span> -->
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
