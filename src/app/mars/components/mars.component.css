@@ -1,0 +1,8 @@
+.example-card {
+  max-width: 80%;
+  margin: 50px 50px 50px 50px;
+}
+.example-header-image {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Mars_Valles_Marineris.jpeg');
+  background-size: cover;
+}
