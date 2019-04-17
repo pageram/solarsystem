@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 
 import { SunComponent } from './components/sun.component';
+
+import { CoreModule } from '../core/core.module';
 import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
-    SunComponent
+    SunComponent,
   ],
   exports: [
     SunComponent
   ],
   imports: [
-    MaterialModule
+    MaterialModule,
+    CoreModule
   ],
   providers: []
 })

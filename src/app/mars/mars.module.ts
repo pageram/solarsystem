@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 
 import { MarsComponent } from './components/mars.component';
+
 import { MaterialModule } from '../material/material.module';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,8 @@ import { MaterialModule } from '../material/material.module';
     MarsComponent
   ],
   imports: [
-    MaterialModule
+    MaterialModule,
+    CoreModule
   ]
 })
 export class MarsModule { }

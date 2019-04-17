@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="inner-container">
+    <div id="left">
+      <button *ngIf="showControls" (click)="prev()" class="btn btn-default">Prev</button>
+    </div>
+    <div id="middle">  
+      <section class="carousel-wrapper" [ngStyle]="carouselWrapperStyle">
+          <ul class="carousel-inner" #carousel>
+            <li *ngFor="let item of items;" class="carousel-item">
+              <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+            </li>
+          </ul>
+      </section>
+    </div>
+    <div id="right">
+      <button  *ngIf="showControls" (click)="next()" class="btn btn-default">Next</button>
+    </div>
+  </div>
+</div>

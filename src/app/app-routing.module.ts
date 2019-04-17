@@ -7,7 +7,7 @@ import { MarsComponent } from './mars/components/mars.component';
 import { HomeComponent } from './home/components/home.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'sun', component: SunComponent },
   { path: 'earth', component: EarthComponent },
   { path: 'mars', component: MarsComponent }
