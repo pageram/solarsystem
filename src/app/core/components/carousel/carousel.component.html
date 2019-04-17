@@ -1,8 +1,7 @@
-
 <div class="container">
   <div class="inner-container">
     <div id="left">
-      <button *ngIf="showControls" (click)="prev()" class="btn btn-default">Prev</button>
+      <button *ngIf="showControls" (click)="prev()" mat-button>Prev</button>
     </div>
     <div id="middle">  
       <section class="carousel-wrapper" [ngStyle]="carouselWrapperStyle">
@@ -14,7 +13,7 @@
       </section>
     </div>
     <div id="right">
-      <button  *ngIf="showControls" (click)="next()" class="btn btn-default">Next</button>
+      <button  *ngIf="showControls" (click)="next()" mat-button>Next</button>
     </div>
   </div>
 </div>
