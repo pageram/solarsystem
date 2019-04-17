@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar [style.background]="' url(' + object.avatar + ') '"></div>
+    <mat-card-title>{{ object.title }}</mat-card-title>
+    <mat-card-subtitle>{{ object.age }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="object.imageSrc" [alt]="object.title">
+  <mat-card-content>
+    <p>
+      {{ object.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+    

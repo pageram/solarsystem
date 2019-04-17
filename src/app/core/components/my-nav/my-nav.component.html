@@ -7,7 +7,7 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar><a routerLink="/home">SolarSystem</a></mat-toolbar>
+    <mat-toolbar><a routerLink="/">SolarSystem</a></mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/sun">Sun</a>
       <a mat-list-item routerLink="/earth">Earth</a>
