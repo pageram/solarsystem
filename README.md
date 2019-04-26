@@ -1,6 +1,12 @@
 # Solarsystem
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Sample project:
+
+1) Codebase with modular structure
+2) Demonstrating parent-child component data-binding
+3) Component reusability
+
+Still a work in progress.
 
 ## Development server
 
